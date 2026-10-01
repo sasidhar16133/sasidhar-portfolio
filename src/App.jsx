@@ -2,12 +2,6 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Award, BookOpen, Briefcase, Database, Mail, Shield, Sparkles, Phone, X } from "lucide-react";
 
-const metrics = [
-  { value: "4,500+", label: "Enterprise tenants" },
-  { value: "100M+", label: "Records processed annually" },
-  { value: "3.5 mos", label: "Time-to-market reduced" },
-  { value: "80%", label: "Client migration enabled" },
-];
 
 const focusAreas = [
   {
@@ -39,10 +33,12 @@ const experience = [
     companyLogo: "/logos/companies/icims.png",
     period: "Aug 2025 – Present",
     points: [
-      "Own product areas spanning IAM, authentication, DMS, document and metadata flows, and enterprise platform capabilities.",
-      "Improved login success by 25% and reduced friction by 40% through authentication and access experience improvements.",
-      "Led platform improvements across metadata extraction and data systems processing 100M+ records annually.",
-      "Built privacy, consent, and compliance-aware controls aligned with GDPR, CCPA, and CPRA frameworks.",
+      "Help define product and platform strategy across identity, document intelligence, semantic retrieval, APIs, and agentic workflows.",
+      "Identify business and technology gaps, evaluate strategic opportunities, and shape roadmap and investment priorities across enterprise platform initiatives.",
+      "Lead cross-functional execution across engineering, security, data, and business teams supporting 4,500+ enterprise customers.",
+      "Drive AI-powered document intelligence capabilities processing 700M+ documents annually.",
+      "Contribute to semantic retrieval and Hiring Agent initiatives, translating business problems into scalable platform capabilities.",
+      "Strengthen authentication, access, privacy, and governance capabilities across enterprise products.",
     ],
   },
   {
@@ -52,10 +48,11 @@ const experience = [
     secondaryLogo: "/logos/companies/citi.jpg",
     period: "May 2022 – Apr 2024",
     points: [
-      "Started as a Full Stack Developer building banking workflows and later transitioned into Product Owner responsibilities.",
-      "Worked on banking and wealth management products spanning payments, transaction workflows, and omnichannel platform experiences.",
-      "Helped unify regional platforms into a global ecosystem, improving migration, operational efficiency, and UX consistency.",
-      "Reduced time-to-market by 3.5 months and delivered significant cost savings through workflow and platform optimization.",
+      "Contributed to transformation of banking and wealth-management platforms spanning payments, authentication, and customer journeys.",
+      "Supported consolidation of regional platforms into a more unified global ecosystem, improving migration, operational efficiency, and experience consistency.",
+      "Worked across engineering and product ownership, translating business requirements into technology solutions.",
+      "Helped reduce time-to-market and improve operational efficiency through workflow and platform optimization.",
+      "Built data-driven solutions using Python, analytics, and machine learning to support customer and retention use cases.",
     ],
   },
 ];
@@ -288,7 +285,7 @@ function FloatingProfileBackground() {
 
 export default function App() {
   const [activeProject, setActiveProject] = useState(null);
-  const typingWords = ["Product Manager", "Strategy & Transformation", "Enterprise Technology", "AI & Platform Strategy"];
+  const typingWords = ["Product Manager", "Platform PM", "Identity & Data PM", "Enterprise SaaS PM"];
   const [wordIndex, setWordIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -321,7 +318,7 @@ export default function App() {
         <nav className="top-nav">
           <div>
             <div className="brand">A V Sasidhar</div>
-            <div className="brand-sub">Strategy, Technology & Transformation Portfolio</div>
+            <div className="brand-sub">Product Manager Portfolio</div>
           </div>
           <div className="nav-links">
             <a href="#experience">Experience</a>
@@ -339,7 +336,7 @@ export default function App() {
                 <span>{typedText}</span>
                 <span className="typing-caret" />
               </div>
-              <h1>Driving strategy, technology transformation, and enterprise growth through data-driven execution.</h1>
+              <h1>Building enterprise identity, data, and platform systems with measurable business impact.</h1>
               <p className="hero-copy">
                 Product Manager and ISB graduate with 4+ years of experience across enterprise technology, AI, financial services, and business transformation. 
                 At iCIMS, I work on strategic platform and transformation initiatives supporting 4,500+ enterprise customers. My experience includes helping define product and platform strategy, identifying business and technology gaps, evaluating strategic opportunities, shaping investment priorities and roadmaps, and driving cross-functional execution across engineering, security, data, and business teams. 
@@ -365,7 +362,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="profile-name">A V Sasidhar</div>
-                  <div className="profile-sub">Strategy, Technology & Transformation</div>
+                  <div className="profile-sub">Platform, Identity & Data Systems</div>
                 </div>
               </div>
               <div className="eyebrow">Quick Snapshot</div>
@@ -373,7 +370,7 @@ export default function App() {
                 {[
                   ["Current role", "Platform, Identity & Data Systems at iCIMS"],
                   ["Prior domain", "Banking & Wealth Management Platforms"],
-                  ["Strengths", "Strategy, Business Transformation, Enterprise Technology, AI & Analytics"],
+                  ["Strengths", "IAM, DMS, Enterprise SaaS, FinTech, Analytics"],
                   ["Contact", "davsasidhar@gmail.com | 7702489741"],
                 ].map(([label, value]) => (
                   <div key={label} className="snapshot-item">
@@ -386,17 +383,8 @@ export default function App() {
           </div>
         </section>
 
-        <section className="metrics-grid">
-          {metrics.map((metric) => (
-            <motion.div key={metric.label} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="metric-card">
-              <div className="metric-value">{metric.value}</div>
-              <div className="metric-label">{metric.label}</div>
-            </motion.div>
-          ))}
-        </section>
-
         <section className="content-section">
-          <SectionTitle eyebrow="What I Work On" title="Core areas of impact" subtitle="Strategy-led work across enterprise technology, transformation, platforms, and analytics-driven decision making." />
+          <SectionTitle eyebrow="What I Build" title="Core areas of work" subtitle="Positioned around the capabilities that differentiate my profile most strongly: identity, data systems, platform thinking, and analytics-led problem solving." />
           <div className="focus-grid">
             {focusAreas.map((item) => {
               const Icon = item.icon;
@@ -481,7 +469,7 @@ export default function App() {
 
         <section id="skills" className="skills-credentials">
           <div className="tools-panel">
-            <SectionTitle eyebrow="Skills" title="Strategy, leadership & technology capabilities" />
+            <SectionTitle eyebrow="Skills" title="Tools & capabilities" />
             <div className="stack compact">
               {skillGroups.map((group) => (
                 <div key={group.title}>
