@@ -349,7 +349,7 @@ export default function App() {
                 <a href="https://www.linkedin.com/in/sasidhar-ayalavarapu-729116173/" target="_blank" rel="noreferrer" className="btn btn-primary">
                   View LinkedIn <ArrowUpRight size={16} />
                 </a>
-                <a href="https://drive.google.com/file/d/1i5QQAp83_pdPmfh_WFDJhY4DsCN6N4vv/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-secondary">
+                <a href="https://drive.google.com/file/d/11YqvXHPo3j7X4748A92LzRJdpf3Y7dbM/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-secondary">
                   Open Resume <ArrowUpRight size={16} />
                 </a>
               </div>
