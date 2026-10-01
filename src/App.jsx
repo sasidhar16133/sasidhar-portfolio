@@ -288,7 +288,7 @@ function FloatingProfileBackground() {
 
 export default function App() {
   const [activeProject, setActiveProject] = useState(null);
-  const typingWords = ["Product Manager", "Platform PM", "Identity & Data PM", "Enterprise SaaS PM"];
+  const typingWords = ["Product Manager", "Strategy & Transformation", "Enterprise Technology", "AI & Platform Strategy"];
   const [wordIndex, setWordIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -321,7 +321,7 @@ export default function App() {
         <nav className="top-nav">
           <div>
             <div className="brand">A V Sasidhar</div>
-            <div className="brand-sub">Product Manager Portfolio</div>
+            <div className="brand-sub">Strategy, Technology & Transformation Portfolio</div>
           </div>
           <div className="nav-links">
             <a href="#experience">Experience</a>
@@ -339,7 +339,7 @@ export default function App() {
                 <span>{typedText}</span>
                 <span className="typing-caret" />
               </div>
-              <h1>Building enterprise identity, data, and platform systems with measurable business impact.</h1>
+              <h1>Driving strategy, technology transformation, and enterprise growth through data-driven execution.</h1>
               <p className="hero-copy">
                 Product Manager and ISB graduate with 4+ years of experience across enterprise technology, AI, financial services, and business transformation. 
                 At iCIMS, I work on strategic platform and transformation initiatives supporting 4,500+ enterprise customers. My experience includes helping define product and platform strategy, identifying business and technology gaps, evaluating strategic opportunities, shaping investment priorities and roadmaps, and driving cross-functional execution across engineering, security, data, and business teams. 
@@ -365,7 +365,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="profile-name">A V Sasidhar</div>
-                  <div className="profile-sub">Platform, Identity & Data Systems</div>
+                  <div className="profile-sub">Strategy, Technology & Transformation</div>
                 </div>
               </div>
               <div className="eyebrow">Quick Snapshot</div>
@@ -373,7 +373,7 @@ export default function App() {
                 {[
                   ["Current role", "Platform, Identity & Data Systems at iCIMS"],
                   ["Prior domain", "Banking & Wealth Management Platforms"],
-                  ["Strengths", "IAM, DMS, Enterprise SaaS, FinTech, Analytics"],
+                  ["Strengths", "Strategy, Business Transformation, Enterprise Technology, AI & Analytics"],
                   ["Contact", "davsasidhar@gmail.com | 7702489741"],
                 ].map(([label, value]) => (
                   <div key={label} className="snapshot-item">
@@ -396,7 +396,7 @@ export default function App() {
         </section>
 
         <section className="content-section">
-          <SectionTitle eyebrow="What I Build" title="Core areas of work" subtitle="Positioned around the capabilities that differentiate my profile most strongly: identity, data systems, platform thinking, and analytics-led problem solving." />
+          <SectionTitle eyebrow="What I Work On" title="Core areas of impact" subtitle="Strategy-led work across enterprise technology, transformation, platforms, and analytics-driven decision making." />
           <div className="focus-grid">
             {focusAreas.map((item) => {
               const Icon = item.icon;
@@ -481,7 +481,7 @@ export default function App() {
 
         <section id="skills" className="skills-credentials">
           <div className="tools-panel">
-            <SectionTitle eyebrow="Skills" title="Tools & capabilities" />
+            <SectionTitle eyebrow="Skills" title="Strategy, leadership & technology capabilities" />
             <div className="stack compact">
               {skillGroups.map((group) => (
                 <div key={group.title}>
