@@ -141,6 +141,26 @@ const projects = [
 
 const skillGroups = [
   {
+    title: "Strategy & Business",
+    skills: [
+      "Strategic Planning",
+      "Business Transformation",
+      "Product Strategy",
+      "Business Case Development",
+      "Opportunity Assessment",
+      "Data-Driven Decision Making",
+    ],
+  },
+  {
+    title: "Leadership & Execution",
+    skills: [
+      "Executive Stakeholder Management",
+      "Cross-functional Leadership",
+      "Roadmap Prioritization",
+      "Program Execution",
+    ],
+  },
+  {
     title: "Product",
     skills: ["Product Strategy", "Roadmapping", "GTM", "Experimentation", "Wireframing"],
   },
@@ -320,8 +340,10 @@ export default function App() {
               </div>
               <h1>Building enterprise identity, data, and platform systems with measurable business impact.</h1>
               <p className="hero-copy">
-                Product Manager with experience across HRTech and FinTech, focused on IAM, DMS, enterprise platform capabilities,
-                and analytics-led product thinking. I work at the intersection of user experience, technical depth, and business outcomes.
+                Product Manager and ISB graduate with 4+ years of experience across enterprise technology, AI, financial services, and business transformation.
+                Currently at iCIMS, I work on strategic platform initiatives spanning identity, AI-powered document intelligence, semantic retrieval, APIs, and agentic workflows supporting 4,500+ enterprise customers. My work involves identifying business and technology gaps, evaluating strategic opportunities, defining investment priorities and roadmaps, and driving cross-functional execution across engineering, security, data, and business teams. 
+                I have contributed to large-scale transformation initiatives including identity modernization, AI document intelligence processing 700M+ documents annually, enterprise semantic search, and the development of iCIMS’ first Hiring Agent. Previously at Virtusa, I worked with Citi’s wealth-management business on platform consolidation, digital payments, authentication, and data-driven solutions. 
+                My experience sits at the intersection of strategy, technology, and execution, with a focus on breaking down complex business problems, evaluating strategic choices, aligning senior stakeholders, and translating long-term priorities into measurable initiatives.
               </p>
               <div className="hero-actions">
                 <a href="https://www.linkedin.com/in/sasidhar-ayalavarapu-729116173/" target="_blank" rel="noreferrer" className="btn btn-primary">
