@@ -211,6 +211,7 @@ const publication = {
   title: "Using Decision Trees to Predict Concrete Compressive Strength",
   subtitle: "Published in IJIEMR",
   text: "Applied machine learning techniques to analyze 1,000+ concrete mix samples for strength prediction, demonstrating analytical rigor and research depth.",
+  url: "https://ijiemr.org/downloads/paper/Volume-10/using-decision-trees-to-predict-concrete-compressive-strength",
 };
 
 const achievements = [
@@ -467,6 +468,14 @@ export default function App() {
             <h3>{publication.title}</h3>
             <div className="publication-subtitle">{publication.subtitle}</div>
             <p>{publication.text}</p>
+            <a
+              href={publication.url}
+              target="_blank"
+              rel="noreferrer"
+              className="publication-link"
+              >
+              View Publication <ArrowUpRight size={16} />
+            </a>
           </div>
         </section>
 
